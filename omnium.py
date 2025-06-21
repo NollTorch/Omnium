@@ -1,6 +1,7 @@
 import webbrowser
 from google import genai
-url_input = input("URL:")
+print("Search with Omnium")
+url_input = input("Search:")
 client = genai.Client(api_key=GEMINI_API_KEY) #Replace with your API key from google AI studio.
 
 response = client.models.generate_content(
